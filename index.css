@@ -1,0 +1,134 @@
+#navbar{
+    width: 70%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15%;
+    position:fixed;
+    background-color: white;
+    top: 0px;
+    /* margin-bottom: 60px; */
+}
+#navbar>div{
+width: 30%;
+/* border: 1px solid black; */
+}
+#navbar>div>img{
+    width: 60%;
+    margin-top:15px;
+}
+#navbar>div:nth-child(3){
+   display: flex; 
+   justify-content: space-between;
+   color: #000000;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+}
+#navbar>div>p{
+    padding: 10px 16px;
+}
+#navbar>div>p:nth-child(4){
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    
+}
+#navbar>div>p:hover{
+    background-color:#ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#search{
+    width: 300px;
+    padding: 10px 20px;
+    margin-left: -150px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+p>a{
+    text-decoration: none;
+    color: #000000;
+}
+#sing>a{
+    color: white;
+}
+#cont{
+    width: 70%;
+    padding: 0% 15%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+#cont>div{
+    
+    width: 80%;
+    /* height: 50px; */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 12px 10%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+#cont>div:hover{
+    background-color: #000000;
+    color: white;
+}
+#cont2{
+    width: 70%;
+    margin: 20px auto auto auto;
+}
+#cont2>img{
+    width: 100%;
+}
+#cook{
+    width: 70%;
+    margin: 20px auto auto auto;
+    display: flex;
+    background-color: #F2F1EC;
+}
+#cook>div{
+    width: 50%;
+    padding: 24px;
+}
+#cook>div>img{
+    width: 100%;
+}
+#cook>div>div{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #333333;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto auto auto;
+}
+#cook>div>div>img{
+    width: 10%;
+}
+.heading{
+    width: 80%;
+    margin: 10px auto auto auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#btn{
+    margin-top: 30px;
+    margin-left: 43%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+

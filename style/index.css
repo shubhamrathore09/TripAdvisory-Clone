@@ -1,13 +1,26 @@
+#navtop{
+    width: 100%;
+    height: 160px;
+    /* margin: auto; */
+
+}
+#navtop>img{
+    width: 50%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 25%;
+    /* margin: auto; */
+}
 #navbar{
     width: 70%;
     border: 1px solid blue;
     display: flex;
     justify-content: space-between;
     padding: 0px 15%;
-    position:fixed;
+    position:sticky;
     background-color: white;
     top: 0px;
-    /* margin-bottom: 60px; */
+    
 }
 #navbar>div{
 width: 30%;
@@ -23,6 +36,7 @@ width: 30%;
    color: #000000;
    font-family: Arial, Helvetica, sans-serif;
    font-size: 16px;
+   margin-right: 10px;
 }
 #navbar>div>p{
     padding: 10px 16px;
@@ -69,7 +83,7 @@ p>a{
     /* height: 50px; */
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 12px 10%;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -81,10 +95,21 @@ p>a{
 }
 #cont2{
     width: 70%;
-    margin: 20px auto auto auto;
+    height: 350px;
+    margin: 20px auto 60px auto;
+    background-image: url(https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp);
 }
-#cont2>img{
+/* #cont2>img{
     width: 100%;
+} */
+#imgsrc{
+    width: 70%;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline:none;
+    margin-left:15%;
+    margin-top: 150px;
 }
 #cook{
     width: 70%;
@@ -128,7 +153,37 @@ p>a{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+#exp{
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.jss{
+    width: 104%;
+    border: 1px solid red;
+}
+#exp>div>img{
+    width: 100%;
+}
+#button{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: -270px auto auto auto;
+   
+}
+#button>button{
+    padding: 10px 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+h1{
+    margin-left: 15%;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
 
 

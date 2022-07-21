@@ -1,0 +1,46 @@
+#extra{
+    width: 25%;
+    /* height: 500px; */
+    /* border: 1px solid red;
+     */
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 20px 20px 0px 0px;
+    padding: 5% 4% 1% 4%;
+    margin: auto;
+}
+#extra>div>img{
+    width: 18px;
+    /* margin-top: 10%;
+    margin-left: 10%; */
+}
+#extra>h2{
+    width: 80%;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#extra>div{
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    border: 2px solid black;
+    padding: 15px 5%;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+#extra>div>p {
+margin: auto;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 16px;
+}
+#mail{
+    margin-bottom: 80px
+}
+
+#extra>p{
+    width: 80%;
+    text-align: center;
+    margin:10px auto auto auto;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,250 @@
+#navtop{
+
+    width: 50%;
+    height: 120px;
+    margin: auto;
+    background-image: url("https://www.tripadvisor.in/img2/langs/en_IN/popups/house/vr.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    animation: slider 10s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url("https://www.tripadvisor.in/img2/langs/en_IN/popups/house/vr.jpg"); }
+    45%{background-image: url("https://s0.2mdn.net/simgad/14726136121116584732"); }
+    75%{background-image: url("https://s0.2mdn.net/simgad/1739383920671535003"); }
+
+}
+#navbar{
+    width: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+    /* position:sticky; */
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    top: 0px;
+    
+}
+#navbar>div>P>svg{
+   margin-top: 0px;
+}
+#navbar>div{
+width: 30%;
+/* border: 1px solid black; */
+}
+#navbar>div>img{
+    width: 60%;
+    margin-top:15px;
+}
+#navbar>div:nth-child(3){
+   display: flex; 
+   justify-content: space-between;
+   color: #000000;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   margin-right: 50px;
+   font-weight: bolder;
+}
+#navbar>div>p{
+    padding: 10px 16px;
+}
+#navbar>div>p:nth-child(4){
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    
+}
+#navbar>div>p:hover{
+    background-color:#ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#search{
+    display: flex;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 10px 10px;
+     margin-left: -100px;
+    /* margin-top: 1px; */
+    border-radius: 20px;
+    border: 1px solid #ccc; 
+}
+#navbar>div>p{
+    display: flex;
+}
+
+p>a{
+    margin: auto;
+    text-decoration: none;
+    color: #000000;
+}
+#sing>a{
+    color: white;
+}
+.search-box{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+#shareexp{
+    font-weight: 600;
+    width: 40%;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+#secondsearch{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    padding: 15px 20px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.footer{
+    background-color: #FAF1ED;
+    padding: 20px;
+    margin-top: 40px;
+}
+#footer2{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    padding: 0px 0% 0px 5%;
+
+}
+#footer2>div:nth-child(1){
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#footerlogo{
+    width: 10%;
+    margin-top: 20px;
+}
+#footerlogo>img{
+    width: 100%;
+}
+#footerpara{
+    margin-left: 20px;
+}
+#footerpara>h4{
+    margin-top: -10px;
+}
+#footerpara>h4>span{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#ff{
+    width: 45%;
+    font-size: 12px;
+    margin-left: 5%;
+    color:#333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer2>div:nth-child(2)>select{
+    width:45%;
+    padding: 8px 50px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#reviewdata{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#reviewdata>h1{
+    margin-bottom: -10px;
+}
+#reviewpic{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    
+}
+#reviewpic>div{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+}
+#reviewpic>div>img{
+    width: 25%;
+    height: 200px;
+    border-radius: 10px 0px 0px 10px;
+}
+#reviewpic>div>h3{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+#reviewpic>div>h3:hover{
+    text-decoration: underline;
+}
+#addreview{
+    width: 90%;
+    padding: 0px 5%;
+}
+
+#formreview{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+#formreview>input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#divch{
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+#divch>p{
+    font-size: 12px;
+}
+#divch>input{
+    margin-top:-40px ;
+}
+
+#formreview>input[type="submit"]{
+width: 20%;   
+margin-bottom: 30px; 
+background-color: #000000;
+color: white;
+font-weight: 500;
+border-radius: 20px;
+}
+#formreview>select{
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 0px;
+
+}

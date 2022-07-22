@@ -273,6 +273,7 @@ function right(){
                 ha:arr[i].head,
                 pa:arr[i].para
             };
+            
             recent(obj);
         })
         document.getElementById("exp").append(div);
@@ -311,10 +312,12 @@ function left(){
     console.log(count);
 }
 }
-
+let review=JSON.parse(localStorage.getItem("reviewdata"))||[];
 let rec=JSON.parse(localStorage.getItem("recent"))||[];
 function recent(div){
     rec.push(div);
+    review.push(div);
+    localStorage.setItem("reviewdata",JSON.stringify(review));
     localStorage.setItem("recent",JSON.stringify(rec));
     if(rec.length>4){
         rec.shift();

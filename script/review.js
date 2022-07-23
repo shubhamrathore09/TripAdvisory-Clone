@@ -21,18 +21,22 @@ data.forEach(function(ele){
     document.querySelector("#reviewpic").append(div);
 })
 
+let readreviewdata=JSON.parse(localStorage.getItem("read-review"))||[];
+
 function display(ele){
+    event.preventDefault()
   let div=document.createElement("div");
   let form=document.createElement("form");
   let label=document.createElement("label");
   label.innerText="Title of your review";
   let input=document.createElement("input");
   input.setAttribute("type","text");
+  input.setAttribute("id","title")
   let label2=document.createElement("label");
   label2.innerText="Your review";
   let input2=document.createElement("input");
   input2.setAttribute("type","text");
-
+  input2.setAttribute("id","detailReview")
   let h3=document.createElement("h3");
   h3.innerText=ele.ha;
 
@@ -63,7 +67,18 @@ function display(ele){
   opt6.innerText="july-2022";
 
   select.append(opt,opt1,opt2,opt3,opt4,opt5);
+  select.setAttribute("id","select")
 
+  let label4=document.createElement("label");
+  label4.innerText="Enter your full-name"
+  let input3=document.createElement("input");
+  input3.setAttribute("type","text");
+  input3.setAttribute("id","fullname");
+
+
+
+
+  
 
   let divch=document.createElement("div");
   let inputch=document.createElement("input");
@@ -78,10 +93,26 @@ function display(ele){
   inputs.setAttribute("type","submit");
 
 
+  inputs.addEventListener("click",function(){
+    event.preventDefault()
+    
+    let obj={
+        title:document.querySelector("#title").value,
+        detai:document.querySelector("#detailReview").value,
+        fullname:document.querySelector("#fullname").value,
+        month:document.querySelector("#select").value,
+        name:ele.ha,
+        img:ele.img,
+    }
+    readreviewdata.push(obj);
+    localStorage.setItem("read-review",JSON.stringify(readreviewdata));
+  })
 
 
 
-  form.append(h3, label,input,label2,input2,label3,select,divch,inputs);
+
+
+  form.append(h3, label,input,label2,input2,label3,select,label4,input3,divch,inputs);
   form.setAttribute("id","formreview");
   
   div.append(form);
@@ -100,3 +131,7 @@ function display(ele){
   document.querySelector("#reviewpic").append(div2)
 
 }
+
+// function readReview(){
+//     let 
+// }

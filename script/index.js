@@ -221,6 +221,7 @@ function Country(){
     }
     
 }
+let tripslike=JSON.parse(localStorage.getItem("trips"))||[];
 
 display(first);
 function display(first){
@@ -232,6 +233,23 @@ first.forEach(function(ele){
         h.innerText=ele.head
         let p=document.createElement("p");
         p.innerText=ele.para
+
+        let div2=document.createElement("div");
+        let h4=document.createElement("h4");
+        h4.innerText="Like";
+        div2.append(h4);
+        div2.setAttribute("id","like")
+        div2.addEventListener("click",function(){
+            let obj1={
+                img:ele.image,
+                head:ele.head,
+                pa:ele.para,
+            }
+            tripslike.push(obj1);
+            console.log(tripslike);
+            localStorage.setItem("trips",JSON.stringify(tripslike));
+        })
+
         div.append(img,h,p);
         div.setAttribute("id","first")
         div.addEventListener("click",function(){
@@ -265,6 +283,26 @@ function right(){
         h.innerText=arr[i].head
         let p=document.createElement("p");
         p.innerText=arr[i].para
+
+
+        
+        let div2=document.createElement("div");
+        let h4=document.createElement("h4");
+        h4.innerText="Like";
+        div2.append(h4);
+        div2.setAttribute("id","like")
+        div2.addEventListener("click",function(){
+            let obj1={
+                img:arr[i].image,
+                head:arr[i].head,
+                pa:arr[i].para,
+            }
+            tripslike.push(obj1);
+            console.log(tripslike);
+            localStorage.setItem("trips",JSON.stringify(tripslike));
+        })
+
+
         div.append(img,h,p);
         div.setAttribute("id","first");
         div.addEventListener("click",function(){
@@ -302,6 +340,24 @@ function left(){
         h.innerText=arr[i].head
         let p=document.createElement("p");
         p.innerText=arr[i].para
+
+
+        let div2=document.createElement("div");
+        let h4=document.createElement("h4");
+        h4.innerText="Like";
+        div2.append(h4);
+        div2.setAttribute("id","like")
+        div2.addEventListener("click",function(){
+            let obj1={
+                img:arr[i].image,
+                head:arr[i].head,
+                pa:arr[i].para,
+            }
+            tripslike.push(obj1);
+            console.log(tripslike);
+            localStorage.setItem("trips",JSON.stringify(tripslike));
+        })
+
         div.append(img,h,p);
         div.setAttribute("id","first");
         document.getElementById("exp").append(div);

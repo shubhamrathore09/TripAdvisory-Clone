@@ -182,7 +182,26 @@ p>a{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto;
     gap: 20px;
+    
 }
+
+#like{
+    width: 40%;
+    height: 30px;
+    /* padding: 2px; */
+    /* margin: auto; */
+    border: 1px solid red;
+    background-color:rgb(104, 86, 86);
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    
+}
+#like>h4{
+    margin-top: 5px;
+}
+
 
 #exp>div>img{
     width: 100%;

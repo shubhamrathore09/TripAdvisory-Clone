@@ -1,4 +1,4 @@
-let sing=JSON.parse(localStorage.getItem("singup"));
+let sing=JSON.parse(localStorage.getItem("singup"))||[];
 document.querySelector("form").addEventListener("submit",login)
 function login(){
     let arr=[];
@@ -24,14 +24,20 @@ function login(){
             }
         }
     }
+
     if(count==1){
         alert("Wrong password")
     }
     else if(count==2){
         alert("succefully login")
+        window.location.href="showreview.html";
     }
+
+    else if(sing.length==0){
+        alert("You do not have login account")
+    }
+
     else{
         alert("details not found")
     }
-    
 }
